@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>GoogleAPIs.dll Docs</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+	<h1>Class FunctionLib</h1>
+	<h2>Public Function GetMileageFromLocations(fromcode As String, tocode As String) As Decimal</h2><br><p>Convert two locations into the distance between them. Returns the mileage as a decimal.</p><br>
+
+    <h2>Public Function GetTimeFromLocations(fromcode As String, tocode As String) As String</h2><br><p>Convert two locations into the time it takes to travel between them. Returns the time as a string without spaces.</p><br>
+
+    <h2>Public Function GetJsonValue(jsonText As String, name As String, Optional skipCount As Integer = 0) As String</h2><br><p>Get the value of a JSON entry. Returns the value as a string.</p><br>
+
+    <h2>Public Function RemoveStringLetters(original As String) As String</h2><br><p>Removes letters from a string. Returns the modified string.</p><br>
+
+    <h2>Public Function RemoveStringNumbers(original As String) As String</h2><br><p>Removes numbers from a string. Returns the modified string.</p><br>
+
+    <h2>Public Function RemoveStringSymbols(original As String) As String</h2><br><p>Removes symbols from a string. Returns the modified string.</p><br>
+
+    <h2>Public Function RemoveIllegalCharacters(dirty As String) As String</h2><br><p>Remove characters not recognized by filters. Returns clean string.</p><br>
+
+    <h2>Public Function FormatUrlMileage(fromAddr As String, toAddr As String, apiKey As String) As String</h2><br><p>Format url for mileage from postal codes. Returns the formated URL as a string.</p><br>
+
+    <h2>Public Function GetRawJSON(url) As String</h2><br><p>Retrieve a raw JSON string from a URL. Returns the JSON as a string. WARNING: JSON may contain dirty characters. Call RemoveIllegalCharacters() to clean.</p><br>
+
+    <h2>Public Function Init() As Boolean</h2><br><p>Initialize the API interface. Returns true if run successfully.
+</body>
+
+</html>
